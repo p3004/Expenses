@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itmSummary"
+        android:icon="@drawable/select_home_summary"
+        android:title="@string/summary"
+        android:titleCondensed="@string/summary"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/itmTotalReport"
+        android:icon="@drawable/select_total_report"
+        android:title="@string/total_report"
+        android:titleCondensed="@string/total_report"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:id="@+id/itmMonthlyReport"
+        android:icon="@drawable/select_monthly_report"
+        android:title="@string/monthly_report"
+        android:titleCondensed="@string/monthly_report"
+        app:showAsAction="always"
+        />
+
+
+</menu>
