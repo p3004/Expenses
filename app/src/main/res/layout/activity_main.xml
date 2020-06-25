@@ -35,9 +35,9 @@
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navigation_menu"
-        android:background="@color/design_default_color_background"
-        app:itemIconSize="32dp"
-        app:itemIconTint="@color/colorBlack"
+        android:background="@color/colorBackground"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/colorWhite"
         />
 
 

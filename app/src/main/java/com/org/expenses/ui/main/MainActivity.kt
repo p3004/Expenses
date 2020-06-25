@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         )
         else
         {
-        //    getFinancialSms.getAllSms(this,experimentTv)
+            getFinancialSms.getAllSms(this)
         }
 
     }
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
                 if(requestCode == SMS_READ_PERMISSION_CODE){
                     if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                 ///       getFinancialSms.getAllSms(this,experimentTv)
+                    getFinancialSms.getAllSms(this)
                     }else
                     {
                         Toast.makeText(this,"Without sms read permission this app can't run!",Toast.LENGTH_SHORT).show()

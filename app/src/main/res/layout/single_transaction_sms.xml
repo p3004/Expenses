@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="190dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="20dp"
-   app:cardElevation="10dp">
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="20dp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineSms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.4"
-            />
+            app:layout_constraintGuide_percent="0.4" />
 
 
         <com.google.android.material.textview.MaterialTextView
@@ -39,13 +40,13 @@
             android:layout_height="30dp"
             android:gravity="center"
             android:textColor="@color/colorTextIndicator"
-            android:textSize="17sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/tvTransactionAmount"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@id/guidelineSms"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread" />
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvTransactionAmount"
