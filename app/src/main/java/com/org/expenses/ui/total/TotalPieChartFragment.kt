@@ -1,4 +1,4 @@
-package com.org.expenses.ui.chart.total
+package com.org.expenses.ui.total
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

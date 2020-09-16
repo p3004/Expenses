@@ -1,4 +1,4 @@
-package com.org.expenses.ui.chart.monthly
+package com.org.expenses.ui.monthly
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

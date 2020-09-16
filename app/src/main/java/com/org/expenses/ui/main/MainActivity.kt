@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         const val SMS_READ_PERMISSION_CODE = 100
     }
 
-    lateinit var getFinancialSms : GetFinancialSms
+    private lateinit var getFinancialSms : GetFinancialSms
 
     private fun initialize(){
         getFinancialSms = GetFinancialSms()
@@ -28,9 +28,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initialize()
-        askPermissionForReadSms()
+
     }
 
+
+    override fun onStart() {
+        super.onStart()
+        askPermissionForReadSms()
+    }
 
    private fun checkPermissionForReadSms(): Boolean = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED
 
